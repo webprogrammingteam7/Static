@@ -1,0 +1,190 @@
+/* 1024px 크기에만 적용되게 만들었습니다. 브라우저 창이 축소할때 등 반응형 기능에 대해서는 스태틱 발표 후 더 고민해야 할 것 같습니다 */
+
+@font-face {
+  font-family: "NotoSansCJKkr-Black";
+  src:url("NotoSansCJKkr-Black.otf") format("truetype"); 
+}
+@font-face {
+  font-family: "gill-sans-mt";
+  src:url("gill-sans-mt.ttf") format("truetype"); 
+}
+
+@font-face {
+  font-family: "gill-sans-mt-ultra-bold";
+  src:url("gill-sans-mt-ultra-bold.ttf") format("truetype"); 
+}
+
+html, body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1024px;  
+} 
+
+header .header {
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 35.63px;  
+  padding-bottom: 6.33px; 
+}
+
+.header .logo {
+  width: 73.9%;
+  height: 100%;
+  float: left;
+  margin-top: 13px;
+}
+
+.header .logo span {
+  font-family: gill-sans-mt-ultra-bold;		
+  font-size: 16px;
+  height: 22px;
+  margin-left: 42px;
+  float: left;
+  text-align: left;  
+}
+
+.header .nav {
+  width: 26%;
+  height: 100%; 
+  float: right;
+  border-left: 1px solid black;
+  padding-top: 13px;  
+}
+
+.header .nav ul {
+  width: 100%;
+  /* inline으로 줄바꿈 없애기 */
+  display: inline;
+  padding: 26px 0 0 27px;
+  height: 11.29px;
+}
+
+.header .nav li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 10px;
+  font-color: black;
+  font-family: gill-sans-mt;
+  text-align: left;
+  width: 72.86px;
+  margin-right: 7.33px;
+  height: 100%;  
+}
+
+.header .nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .line {
+  width: 73.85%;
+  height: 71px;
+  border-right: 1px solid black;
+  display: block;
+}
+
+.main {
+  background-color: #13B4D1;
+  width: 100%;
+  height: 660px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.search {
+  width: 26%;
+  height: 660px; 
+  float: right;
+  border-left: 1px solid black;
+}
+
+.search .search_bar #bar {
+  width: 204.11px; 
+  height: 25.83px;
+  margin: 46.1px 42px 28.65px 15.89px;
+  padding: 0;
+  border: 1px solid black;
+  
+}
+
+/* popup처럼? 밑에 펼쳐지도록 구현해야. 일단 모양만 잡자*/
+.search #search_tag {
+  width: 204.11px;
+  height: 324.55px;
+  background-color: white;
+  margin-left: 15.89px;
+  border: 1px solid black;
+}
+
+.today_event {
+  width: 73.9%;
+  height: 660px;
+  float: left;
+}
+
+.today_event #popup_about { 
+  width: 35px;
+  height: 35px;
+  background-color: #FFD800;
+  float: right;
+  margin-right: 20px;  
+}
+
+.today_event h3 {
+  font-size: 22px;
+  /* 프로토타입과 글꼴이 다른 것 같은데..? 다시 받아야겠다 */
+  font-family: NotoSansCJKkr-Black;
+  margin: 109px 0 0 40px; 
+  height: 40px;
+}
+
+.today_event .today_card .event {
+  /* 카드의 가로 세로 비율은 29:47. 여기 일단 비율로 적어봤습니다. */
+  width: 28%;
+  padding-top: 47%;
+  margin-right: 15px;
+  background-color: white;
+  display: inline-block;
+  border: 3px solid black;
+}
+
+.today_event div:first-child {
+  margin-left: 41.5px;
+}
+
+/* today_explore는 모양만 잡았습니다*/
+.today_explore {
+  margin-top: 211.09px;
+}
+
+.today_explore .calender .calender_icon {
+  width: 42.66px;
+  height: 35.68px;
+  background-color: #FFD800;
+  margin-left: 370.33px;
+  border: 3px solid black;
+  display: inline-block;  
+}
+
+.calender .calender_month {
+  width: 42.66px;
+  margin: 19.16px 0px 19.16px 370.33px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.calender .calender_day {
+  margin: 0 0 62.85px 325px;
+  width: 150px;
+  font-size: 45px;  
+  font-family: NotoSansCJKkr-Black;
+}
+
+.calender .daily_event {
+  width: 540px;
+  height: 140.85px;
+  background-color: white;
+  display: block;
+  margin: 0 0 29.1px 122px;
+  border: 1.5px solid black;
+}
