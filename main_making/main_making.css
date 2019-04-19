@@ -17,7 +17,7 @@
 html, body {
   margin: 0 auto;
   padding: 0;
-  max-width: 1024px;  
+  width: 1024px;  
 } 
 
 header .header {
