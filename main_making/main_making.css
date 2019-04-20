@@ -4,6 +4,17 @@
   font-family: "NotoSansCJKkr-Black";
   src:url("NotoSansCJKkr-Black.otf") format("truetype"); 
 }
+
+@font-face {
+  font-family: "NotoSansCJKkr-Black";
+  src:url("NotoSansCJKkr-Thin.otf") format("truetype"); 
+}
+
+@font-face {
+  font-family: "NotoSansCJKkr-Black";
+  src:url("NotoSansCJKkr-DemiLight.otf") format("truetype"); 
+}
+
 @font-face {
   font-family: "gill-sans-mt";
   src:url("gill-sans-mt.ttf") format("truetype"); 
@@ -138,18 +149,90 @@ header .line {
   height: 40px;
 }
 
-.today_event .today_card .event {
-  /* 카드의 가로 세로 비율은 29:47. 여기 일단 비율로 적어봤습니다. */
-  width: 28%;
-  padding-top: 47%;
+.today_card {
   margin-right: 15px;
-  background-color: white;
   display: inline-block;
+  width: 220.1px;
+  height: 352px;
   border: 3px solid black;
 }
 
 .today_event div:first-child {
   margin-left: 41.5px;
+}
+
+.today_card .today_image {
+  width : 100%;
+  height : 282.97px;
+  border-bottom : 1px solid black;
+}
+
+.today_content {
+	width : 100%;
+	height : 45.66px;
+	border-bottom: 1px solid black;
+}
+
+.today_text {
+	width : 80%;
+	height: 45.66px;
+	float: left;
+	position: relative;
+	border-right : 1px solid black;
+}
+.today_list1 {
+  width : 100%;
+  height : 22.83px;
+  border-bottom : 1px solid black;
+  position: relative;
+  font-size: 14px;
+  font-family: "NotoSansCJKkr-Black";  
+}
+
+.today_list1 span {
+  margin-left: 3.79px;
+  padding: 0;
+}
+
+.today_card .today_list2 {
+  width : 71.3px;
+  height : 22.83px;
+  /* font-family: Noto Sans CJK KR, DemiLight; */
+  border-right : 1px solid black;
+  display: inline-block;  
+  font-size: 9px;
+  font-family: "NotoSansCJKkr-DemiLight";
+  position: relative;
+  float: left;
+  text-align: center;
+}
+
+.today_card .today_list3 {
+  width : 97.5px;
+  height : 22.83px;
+  font-family: "NotoSansCJKkr-DemiLight";
+  font-size: 9px;
+  float: left;
+  text-align: center; 
+}
+
+.today_card p {
+	margin-top: 4px;
+}
+
+.today_star {
+  width : 19%;
+  height : 39.46px; 
+   float: right;
+   position: relative;
+   display: inline-block;
+}
+
+.today_card .today_tag {
+  font-family: "NotoSansCJKkr-Thin";
+  float: left;
+  font-size: 9px;
+  text-align: left;
 }
 
 /* today_explore는 모양만 잡았습니다*/
