@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="list.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+    </script>
+    <title>snuplan-list</title>
+</head>
+<body>
+    <!-- header에는 로고와 index가 들어갑니다 -->
+<div class="container">
+<header>
+    <nav>
+        <a class="logo" href="#main.html">snuplan</a>
+        <ul>
+            <li><a href="#my page">my page</a></li>
+            <li><a href="#login">login</a></li>
+            <li><a href="#about">about</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- section에는 본문과 좌측 검색창이 들어갑니다. -->
+<section class="content">
+    <main class="main-container">
+        <!-- 'list<->card'toggle Switch 입니다. javascript를 활용해 추후에 구현예정.-->
+        <span><input type="button" value="card" onclick="" class="toggle_view"></span>
+        <!-- list를 보여주는 곳입니다. -->
+        <div class="list-container">
+            <div class="list-leftitem">
+                <div class="list1">
+                    <p>웹프로그래밍개론</p>
+                    <input type="checkbox" name="boomark" id="">
+                </div>
+                <div class="list2">
+                    <p id="date">4월 28일 10:00</p>
+                    <p>서울대학교 83동 601호</p>
+                </div>
+                <div class="list3">
+                    <p>석가는 끓는 가치를 않는 위하여 하였으며 것이 부패 뿐이다. 곳이 피고 거친 위하여 튼튼하며, 이것이다. 가는 방지하는 무엇을 봄바람이다. 무엇을 따뜻한 인간의 가장 아름다우냐. 대고 어디 같이, 평화스러운 우리는 피고, 만천하의 듣는다. 인생에 온갖 얼음과 대중을 오아이스도 피가 놀이 자신과 이것이다. 것은 원질이 그림자는 우리 사막이다. 그들은 목숨을 인생을 일월과 이것이다. 그러므로 인생의 앞이 대한 귀는 하는 않는 그들은 몸이 철환하였는가? 위하여, 영락과 사랑의 스며들어 공자는 트고, 청춘에서만 소담스러운 황금시대의 피다. 가는 불어 대중을 구하지 칼이다. 길을 소금이라 이상의 커다란 넣는 같이, 사막이다. 오아이스도 찾아 얼마나 가치를 못할 곳으로 안고, 너의 봄바람이다. 대고, 있는 가는 황금시대다. 구하기 인생을 우리는 같이 위하여, 군영과 인간은 동산에는 끓는다. 역사를 없는 모래뿐일 방황하여도, 끓는다. 품었기 우리의 대고, 투명하되 자신과 희망의 아름다우냐? 능히 착목한는 주며, 없는 못할 위하여 것이다. 우는 위하여 피가 있을 내려온 보이는 발휘하기 우리는 평화스러운 뿐이다. 피어나는 풍부하게 간에 교향악이다. 가슴에 찾아다녀도, 관현악이며, 만물은 쓸쓸하랴? 사라지지 대중을 크고 있으랴? 듣기만 가치를 용감하고 황금시대의 가는 심장은 아니한 거친 칼이다. 따뜻한 황금시대의 인도하겠다는 그들은 철환하였는가? 있는 이상의 인생에 이상을 철환하였는가? 영원히 타오르고 얼마나 인생을 보는 이것이야말로 그리하였는가? 굳세게 인간은 장식하는 천고에 낙원을 바이며, 노년에게서 이상 보라. 있을 인생을 인류의 품으며, 역사를 것이다. 이상의 낙원을 구하지 풍부하게 찾아다녀도, 청춘의 것이다. 것이다.보라, 위하여 맺어, 있다.</p>
+                </div>
+                <div class="list4">
+                    <p>tag1</p>
+                    <p>tag2</p>
+                    <p>tag3</p>
+                </div>
+            </div>
+            <div class="list-rightitem">
+                nothing goes here yet
+            </div>
+        </div>
+    </main>
+    <aside class="aside-container">
+        <div class="aside-left">
+            <input type="text" name="search" placeholder = "검색" id="">
+            <div class="tag-container">
+                <div class="tag-item">
+                    <div class="tag-item-title">
+                        성격
+                    </div>
+                    <div class="tag-item-select">
+                        <input type="checkbox" name="chk_info" value="전공/취업 설명회">전공/취업 설명회<br>
+                        <input type="checkbox" name="chk_info" value="세미나/강연/특강">세미나/강연/특강<br>
+                        <input type="checkbox" name="chk_info" value="공연/전시">공연/전시<br>
+                        <input type="checkbox" name="chk_info" value="이벤트">이벤트<br>
+                    </div>
+                </div>
+                <div class="tag-item">
+                    <div class="tag-item-title">
+                        주제
+                    </div>
+                    <div class="tag-item-select">
+                        <input type="checkbox" name="chk_info" value="봉사">봉사<br>
+                        <input type="checkbox" name="chk_info" value="어학">어학<br>
+                        <input type="checkbox" name="chk_info" value="여행">여행<br>
+                        <input type="checkbox" name="chk_info" value="창업">창업<br>
+                        <input type="checkbox" name="chk_info" value="건강/보건">건강/보건<br>
+                        <input type="checkbox" name="chk_info" value="문화/예술">문화/예술<br>
+                        <input type="checkbox" name="chk_info" value="스포츠/레저">스포츠/레저<br>
+                        <input type="checkbox" name="chk_info" value="경제/금융">경제/금융<br>
+                        <input type="checkbox" name="chk_info" value="경영/컨설팅">경영/컨설팅<br>
+                        <input type="checkbox" name="chk_info" value="정치/사회">정치/사회<br>
+                        <input type="checkbox" name="chk_info" value="IT/기술">IT/기술<br>
+                    </div>
+                </div>
+                <div class="tag-item">
+                    <div class="tag-item-title">
+                        주최기관
+                    </div>
+                    <div class="tag-item-select">
+                        <input type="checkbox" name="chk_info" value="학내기관">학내기관<br>
+                        <input type="checkbox" name="chk_info" value="대외기관">대외기관<br>
+                        <input type="checkbox" name="chk_info" value="학생자치">학생자치<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside-right">
+            <input type="button" value="+">
+        </div>
+    </aside>
+</section>
+<footer>
+        Copyright 2019. 웹프로그래밍개론-10조. all rights reserved.
+</footer>
+</div>
+</body>
+</html>

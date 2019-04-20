@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "NotoSansCJKkr-Black";
+    src:url("NotoSansCJKkr-Black.otf") format("truetype"); 
+  }
+  @font-face {
+    font-family: "gill-sans-mt";
+    src:url("gill-sans-mt.ttf") format("truetype"); 
+  }
+  
+  @font-face {
+    font-family: "gill-sans-mt-ultra-bold";
+    src:url("gill-sans-mt-ultra-bold.ttf") format("truetype"); 
+  }
+
+$color-primary: #13B4D1 !global;
+$color-secondary: #FFD800 !global;
+$noto: 'Noto Sans KR', sans-serif !global;
+$lato: 'Lato', sans-serif !global;
+$box-shadow: 1px 3px 3px rgba(0,0,0,0.2) !global;
+// 재사용 가능하게 font 정의
+@mixin font_logo{
+    font: {
+        size: 16px;
+        weight: 900;
+        family: "gill-sans-mt-ultra-bold";	
+    }
+    letter-spacing: 3.0;
+    line-height: 2.0;
+}
+@mixin font_nav{
+    font: {
+        size: 10px;
+        weight: 300;
+        family: $noto;
+    }
+    letter-spacing: null;
+    line-height: 1.1;
+    text-align: right;
+}
+@mixin font_title{
+    font: {
+        size: 15px;
+        weight: 900;
+        family: $noto;
+    }
+    letter-spacing: 3.0;
+    line-height: 2.2;
+}
+@mixin font_date{
+    font: {
+        size: 13px;
+        weight: bold;
+        family: $noto;
+    }
+    line-height: 1.9;
+}
+@mixin font_description{
+    font: {
+        size: 9px;
+        weight: 200;
+        family: $noto;
+    }
+    letter-spacing: null;
+    line-height: 1.5;
+}
+@mixin font_tag{
+    font: {
+        size: 10px;
+        weight: bold;
+        family: $noto;
+    }
+    letter-spacing: 3.0;
+    line-height: 15px;
+    text-align: center;
+}
+
+/*body 기본 폰트 정의 및 CSS 초기화*/
+body{
+    font: {
+        family: 'Noto Sans KR', Arial, Helvetica, sans-serif;
+        weight: 400;
+        size: 12px;
+    }
+    color: #000;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    :hover {
+        color: turquoise;
+    }
+}
+/*header와 section, footer를 감싸는 container*/
+.container{
+    position: abolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    header, section, footer{
+        border-bottom: 1px solid black;
+    }
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+
+/*header 안의 nav(logo, lists) 정렬*/
+nav{
+    @include font_nav;
+    text-transform: uppercase;
+    line-height: normal;
+    .logo {
+        @include font_logo;
+        float: left;
+        padding: {
+            left: 10px;
+            right: 10px;
+            bottom: 5px;
+        }
+    }
+
+}
+
+ul{
+    list-style: none;
+    overflow: hidden;
+    li {
+        float:right;
+        padding: {
+            top: 6px;
+            left: 10px;
+            right: 10px;
+        }
+        a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+}
+/*main과 aside를 감싸는 content*/
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+aside{
+    border-left: 1px solid black;
+    padding: 10px;
+    background-color: $color-primary;
+}
+.aside-right>input{
+    box-shadow: $box-shadow;
+}
+.aside-left>input{
+    width:204px;
+    margin-bottom:10px;
+    box-shadow: $box-shadow;
+}
+
+.aside-right{
+    margin-left: 10px;
+}
+/*aside를 감싸는 aside-container*/
+.aside-container{
+    display: flex;
+    flex-direction: row;
+}
+
+/*tag*/
+.tag-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: $box-shadow;
+    background-color: #fff;
+    padding: {
+        right:7px;
+        top:5px;
+        bottom:5px;
+        left:5px;
+    } 
+    .tag-item{
+        display: flex;
+        flex-direction: row;
+        padding-bottom:15px;
+        .tag-item-title{
+            font-weight: bold;
+            width: 60px;
+        }
+        .tag-item-select{
+            line-height: 2;
+            width: 130px;
+        }
+        .tag-item-select input{
+            display: inline-block;
+        }
+    }
+}
+
+/*여기부터 MAIN CONTENT(Listview)*/
+.main-container{
+    display:flex;
+    flex-direction: column;
+    margin: {
+        left: auto;
+        right: auto;
+        top:0;
+        bottom:0;
+    }
+    input{
+        width: auto;
+        float: right;
+        margin:10px;
+    }
+}
+/*list 2분할(좌,우)*/
+.list-container{
+    display: flex;
+    flex-direction: row;
+    width:540px;
+    border: 2px solid black;
+    box-shadow: $box-shadow;
+    margin:15px;
+}
+
+/*list-left 세로 4분할*/
+.list-leftitem {
+    display: flex;
+    flex-direction: column;
+    width:430.61px;
+    }
+
+/*list font-style*/
+.list1 p{
+    @include font_title;
+    display: inline;
+}
+.list2 p{
+    @include font_date;
+    display: inline;
+}
+.list3 p{
+    @include font_description;
+    display: inline;
+}
+.list4 p{
+    @include font_tag();
+    display: inline;
+}
+
+.list1, .list2, .list3, .list4{
+    border-bottom: 1px solid #444;
+    margin:0;
+    padding:0;
+}
+
+/*list3(description) 글자수 제한(3줄, '...'표시)*/
+.list3{
+    line-height: 1.5;
+    max-height: 4.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    
+}
+
+
+.list4{
+    border-bottom: none; /*밑줄 중복현상 제거*/
+}
+
+
+.list-rightitem{
+    width: 88.86px;
+    padding: {
+        top: 5px;
+        bottom: 5px;
+        left: 10px;
+        right: 10px;
+    }
+    border-left: 1px solid #444;
+}
+
+#date {
+    padding-right: 20px;
+    border-right: 1px solid #444;
+}
+
+.list1 p, .list2 p, .list3, .list4{
+    padding: {
+        top: 2px;
+        bottom: 4px;
+        left: 10px;
+        right: 10px;
+    }
+}
