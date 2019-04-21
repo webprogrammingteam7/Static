@@ -12,7 +12,12 @@
   src: url("gill-sans-mt-ultra-bold.ttf") format("truetype"); }
 
 /*body 기본 폰트 정의 및 CSS 초기화*/
+html, body, .container {
+  width: 100%;
+  height: 100%; }
+
 body {
+  overflow: hidden;
   font-family: 'Noto Sans KR', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -29,16 +34,24 @@ a {
 /*header와 section, footer를 감싸는 container*/
 .container {
   position: abolute;
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column; }
   .container header, .container section, .container footer {
     border-bottom: 1px solid black; }
 
+header {
+  flex: 0 0 auto; }
+
+section {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto; }
+
 footer {
+  flex: 0 0 auto;
   text-align: center;
-  padding: 10px; }
+  padding: 10px;
+  display: none; }
 
 /*header 안의 nav(logo, lists) 정렬*/
 nav {
@@ -49,48 +62,59 @@ nav {
   line-height: 1.1;
   text-align: right;
   text-transform: uppercase;
-  line-height: normal; }
+  line-height: normal;
+  display: flex;
+  flex-direction: row; }
   nav .logo {
     font-size: 16px;
     font-weight: 900;
     font-family: "gill-sans-mt-ultra-bold";
     letter-spacing: 3.0;
     line-height: 2.0;
-    float: left;
     padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px; }
+    padding-right: 10px; }
+  nav div {
+    flex-grow: 7; }
+  nav a, nav div, nav ul {
+    justify-content: space-between;
+    align-items: center; }
 
 ul {
   list-style: none;
   overflow: hidden; }
   ul li {
-    float: right;
-    padding-top: 6px;
+    display: inline-block;
     padding-left: 10px;
     padding-right: 10px; }
-    ul li a {
-      display: block;
-      text-align: center;
-      text-decoration: none; }
 
-/*main과 aside를 감싸는 content*/
+/*article과 aside를 감싸는 content*/
 .content {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center; }
 
 aside {
+  flex: 0 0 auto;
   border-left: 1px solid black;
   padding: 10px;
   background-color: #13B4D1; }
+
+article {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+  margin-left: 120px; }
 
 .aside-right > input {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2); }
 
 .aside-left > input {
   width: 204px;
+  height: 25px;
   margin-bottom: 10px;
-  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2); }
+  border: 1px solid black; }
 
 .aside-right {
   margin-left: 10px; }
@@ -99,6 +123,14 @@ aside {
 .aside-container {
   display: flex;
   flex-direction: row; }
+
+/*여기부터 ARTICLE CONTENT(Listview)*/
+.article-container {
+  display: flex;
+  flex-direction: column; }
+  .article-container > span {
+    margin-left: 585px;
+    margin-top: 100px; }
 
 /*tag*/
 .tag-container {
@@ -123,19 +155,6 @@ aside {
       width: 130px; }
     .tag-container .tag-item .tag-item-select input {
       display: inline-block; }
-
-/*여기부터 MAIN CONTENT(Listview)*/
-.main-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0; }
-  .main-container input {
-    width: auto;
-    float: right;
-    margin: 10px; }
 
 /*list 2분할(좌,우)*/
 .list-container {
@@ -202,8 +221,7 @@ aside {
   -webkit-box-orient: vertical; }
 
 .list4 {
-  border-bottom: none;
-  /*밑줄 중복현상 제거*/ }
+  border-bottom: none; }
 
 .list-rightitem {
   width: 88.86px;
