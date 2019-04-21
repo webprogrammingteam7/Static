@@ -116,6 +116,12 @@ section{
     flex: 1 1 auto;
     position: relative;
     overflow-y: auto;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 footer{
     flex: 0 0 auto;
@@ -127,10 +133,12 @@ footer{
 /*header 안의 nav(logo, lists) 정렬*/
 nav{
     @include font_nav;
-    text-transform: uppercase;
-    line-height: normal;
     display: flex;
     flex-direction: row;
+
+    text-transform: uppercase;
+    line-height: normal;
+
     .logo {
         @include font_logo;
         padding: {
@@ -157,20 +165,15 @@ ul{
         }
     }
 }
-/*article과 aside를 감싸는 content*/
-.content{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 aside{
     flex: 0 0 auto;
     border-left: 1px solid black;
     padding: 10px;
     background-color: $color-primary;
+
+    display: flex;
+    flex-direction: row;
 }
 
 article{
@@ -178,7 +181,15 @@ article{
     position: relative;
     overflow-y: auto;
     margin-left: 120px;
+
+    display:flex;
+    flex-direction: column;
+    >span{
+        margin-left:585px;
+        margin-top:100px;
+    }
 }
+
 .aside-right>input{
     box-shadow: $box-shadow;
 }
@@ -192,28 +203,13 @@ article{
 .aside-right{
     margin-left: 10px;
 }
-/*aside를 감싸는 aside-container*/
-
-.aside-container{
-    display: flex;
-    flex-direction: row;
-}
-
-/*여기부터 ARTICLE CONTENT(Listview)*/
-.article-container{
-    display:flex;
-    flex-direction: column;
-    >span{
-        margin-left:585px;
-        margin-top:100px;
-    }
-}
 
 /*tag*/
 .tag-container{
     display: flex;
     flex-direction: column;
     border: 1px solid black;
+
     box-shadow: $box-shadow;
     background-color: #fff;
     padding: {
@@ -222,6 +218,7 @@ article{
         bottom:5px;
         left:5px;
     } 
+
     .tag-item{
         display: flex;
         flex-direction: row;
@@ -248,6 +245,10 @@ article{
     border: 2px solid black;
     box-shadow: $box-shadow;
     margin:15px;
+    input{
+        float:right;
+        margin: 10px;
+    }
 }
 
 /*list-left 세로 4분할*/

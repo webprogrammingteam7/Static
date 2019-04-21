@@ -45,7 +45,12 @@ header {
 section {
   flex: 1 1 auto;
   position: relative;
-  overflow-y: auto; }
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 footer {
   flex: 0 0 auto;
@@ -61,10 +66,10 @@ nav {
   letter-spacing: null;
   line-height: 1.1;
   text-align: right;
-  text-transform: uppercase;
-  line-height: normal;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  text-transform: uppercase;
+  line-height: normal; }
   nav .logo {
     font-size: 16px;
     font-weight: 900;
@@ -87,25 +92,24 @@ ul {
     padding-left: 10px;
     padding-right: 10px; }
 
-/*article과 aside를 감싸는 content*/
-.content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
 aside {
   flex: 0 0 auto;
   border-left: 1px solid black;
   padding: 10px;
-  background-color: #13B4D1; }
+  background-color: #13B4D1;
+  display: flex;
+  flex-direction: row; }
 
 article {
   flex: 1 1 auto;
   position: relative;
   overflow-y: auto;
-  margin-left: 120px; }
+  margin-left: 120px;
+  display: flex;
+  flex-direction: column; }
+  article > span {
+    margin-left: 585px;
+    margin-top: 100px; }
 
 .aside-right > input {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2); }
@@ -118,19 +122,6 @@ article {
 
 .aside-right {
   margin-left: 10px; }
-
-/*aside를 감싸는 aside-container*/
-.aside-container {
-  display: flex;
-  flex-direction: row; }
-
-/*여기부터 ARTICLE CONTENT(Listview)*/
-.article-container {
-  display: flex;
-  flex-direction: column; }
-  .article-container > span {
-    margin-left: 585px;
-    margin-top: 100px; }
 
 /*tag*/
 .tag-container {
@@ -164,6 +155,9 @@ article {
   border: 2px solid black;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
   margin: 15px; }
+  .list-container input {
+    float: right;
+    margin: 10px; }
 
 /*list-left 세로 4분할*/
 .list-leftitem {
