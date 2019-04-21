@@ -271,10 +271,112 @@ article{
     display:flex;
     flex-direction: column;
     margin-left: 120px;
+    margin-top:80px;
     >span{
         margin-left:585px;
-        margin-top:80px;
     }
+}
+
+main{
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid black;
+}
+
+.date_changer{
+    width: 762px;
+    margin-top: 100px;
+    p{
+        display: block;
+        margin: 0px;
+        margin-top: 30px;
+        &:nth-child(1){@include font_datechanger_month}
+        &:nth-child(2){@include font_datechanger}
+    }
+}
+/*main 정렬 및 스타일링*/
+h1{
+    @include font_h1;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+.today_event{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1;
+    overflow: hidden;
+    width: 762px;
+    padding: {
+        left: 50px;
+        right: 5px;
+        top: 10px;
+        bottom: 20px;
+    }
+}
+.recommend_wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 220px;
+    height: 360px;
+    border: 3px solid black;
+    box-shadow: $box-shadow;
+    margin-bottom: 150px;
+}
+.poster{
+    height: 300px;
+    border-bottom: 1px solid black;
+}
+.fuck_design{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #000;
+}
+.fuck_2nd{
+    display: flex;
+    flex-direction: column;
+    width:173px;
+    border-right: 1px solid black;
+    h2{
+        border-bottom: 1px solid black;
+    }
+    h2, p{
+        margin: 0px;
+        padding: {
+            left: 5px;
+            right: 5px;
+        }
+    }
+}
+.fuck_3rd{
+    display: flex;
+    flex-direction: row;
+    p{
+        @include font_maindate;
+        height:18px;
+        &:nth-child(2){border-left: 1px solid black}
+        padding-top: 4px;
+    }
+}
+.main_tag_container{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    p{
+        padding-left:5px;
+        padding-right: 5px;
+        padding-top: 3px;
+        margin: 0px;
+        width: 100%;
+    }
+}
+
+.main_tag{
+    @include font_maintag;
+    display: inline-block;
 }
 
 /*사이드바 스타일링*/
