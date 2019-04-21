@@ -175,7 +175,7 @@ a{
     text-decoration: none;
     color: #000;
     &:hover {
-        color: turquoise;
+        color: $color-secondary;
     }
 }
 /*header와 section, footer를 감싸는 container*/

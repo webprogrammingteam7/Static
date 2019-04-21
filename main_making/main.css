@@ -30,7 +30,7 @@ a {
   text-decoration: none;
   color: #000; }
   a:hover {
-    color: turquoise; }
+    color: #FFD800; }
 
 /*header와 section, footer를 감싸는 container*/
 .container {
