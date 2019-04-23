@@ -10,9 +10,10 @@
   src: url("gill-sans-mt-ultra-bold.ttf") format("truetype"); }
 
 /*body 기본 폰트 정의 및 CSS 초기화*/
-html, body, .container {
-  width: 100%;
-  height: 100%; }
+html, body, .container{
+  width: 1024px;
+  height: 100%;
+  margin: 0 auto; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0px; }
@@ -52,7 +53,9 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 71.44px;
+}
 
 footer {
   flex: 0 0 auto;
@@ -89,7 +92,8 @@ nav {
 
 ul {
   list-style: none;
-  overflow: hidden; }
+  overflow: hidden;
+ }
   ul li {
     display: inline-block;
     padding-left: 10px;
@@ -101,15 +105,11 @@ ul {
   position: relative;
   overflow-y: auto;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 762px;
+  }
 
-aside {
-  flex: 0 0 auto;
-  border-left: 1px solid black;
-  padding: 10px;
-  background-color: #13B4D1;
-  display: flex;
-  flex-direction: row; }
+
 
 article {
   display: flex;
@@ -119,12 +119,15 @@ article {
   article > span {
     margin-left: 585px; }
 
+
+/*옆에 붙어있는 스크롤 맨 오른쪽으로 넘겨야*/
 main {
   background-color: #13B4D1;
   display: flex;
   flex-direction: column;
   margin: 0px;
   padding: 0px;
+  width: 761px;
   border-bottom: 1px solid black; }
 
 .date_changer {
@@ -158,16 +161,16 @@ h1 {
   line-height: 33px;
   text-align: left;
   padding-left: 30px;
-  margin-top: 30px; }
+  margin-top: 109.93px; }
 
 .today_event {
   display: flex;
-  justify-content: space-between;
+
   flex-basis: 1;
   overflow: hidden;
-  width: 762px;
-  padding-left: 50px;
-  padding-right: 5px;
+  width: 100%;
+
+
   padding-top: 10px;
   padding-bottom: 20px; }
 
@@ -175,37 +178,49 @@ h1 {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  width: 220px;
+  width: 214.1px;
   height: 360px;
   border: 3px solid black;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
-  margin-bottom: 150px; }
+  margin-bottom: 150px;
+  margin-right: 20.9px
+}
+.poster img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.list-rightitem img {
+  width: 100%;
+  height: 100%;
+}
 
 .poster {
-  height: 300px;
+  height: 290.31px;
   border-bottom: 1px solid black; }
 
-.fuck_design {
+.today_content {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #000; }
 
-.fuck_2nd {
+.today_text {
   display: flex;
   flex-direction: column;
   width: 173px;
   border-right: 1px solid black; }
-  .fuck_2nd h2 {
+  .today_text h2 {
     border-bottom: 1px solid black; }
-  .fuck_2nd h2, .fuck_2nd p {
+  .today_text h2, .today_text p {
     margin: 0px;
     padding-left: 5px;
     padding-right: 5px; }
 
-.fuck_3rd {
+.today_inform {
   display: flex;
   flex-direction: row; }
-  .fuck_3rd p {
+  .today_inform p {
     font-size: 9px;
     font-weight: 300;
     font-family: "Noto Sans KR", sans-serif;
@@ -214,7 +229,7 @@ h1 {
     text-align: left;
     height: 18px;
     padding-top: 4px; }
-    .fuck_3rd p:nth-child(2) {
+    .today_inform p:nth-child(2) {
       border-left: 1px solid black; }
 
 .main_tag_container {
@@ -238,17 +253,31 @@ h1 {
   display: inline-block; }
 
 /*사이드바 스타일링*/
+aside {
+  flex: 0 0 auto;
+  border-left: 1px solid black;
+  background-color: #13B4D1;
+  display: flex;
+  flex-direction: row;
+  width: 262px;
+ }
+
+
 .aside-right > input {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2); }
 
 .aside-left > input {
   width: 204px;
   height: 25px;
-  margin-bottom: 10px;
-  border: 1px solid black; }
+
+  border: 1px solid black;
+  margin-top: 46.10px;
+  margin-left: 15.89px;
+ }
 
 .aside-right {
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-top: 47.10px; }
 
 /*사이드바 안의 tag들 스타일링*/
 .tag-container {
@@ -257,10 +286,19 @@ h1 {
   border: 1px solid black;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
   background-color: #fff;
-  padding-right: 7px;
+
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 5px; }
+  padding-left: 5px;
+  width: 204.11px;
+  margin-top: 28.65px;
+  margin-left: 15.89px;
+ }
+
+.tag-item-title {
+  font-size: 9px;
+}
+
   .tag-container .tag-item {
     display: flex;
     flex-direction: row;
