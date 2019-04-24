@@ -17,7 +17,8 @@ html, body, .container {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0px; }
+  margin: 0px;
+}
 
 body {
   overflow: hidden;
@@ -26,7 +27,8 @@ body {
   font-size: 12px;
   color: #000;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
 a {
   text-decoration: none;
@@ -40,7 +42,8 @@ a {
   display: flex;
   flex-direction: column; }
   .container header, .container section, .container footer {
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+   }
 
 header {
   flex: 0 0 auto; }
@@ -62,7 +65,8 @@ footer {
   flex: 0 0 auto;
   text-align: center;
   padding: 10px;
-  display: none; }
+  display: none;
+}
 
 /*header 안의 nav(logo, lists) 정렬*/
 nav {
@@ -109,8 +113,6 @@ ul {
   width: 762px;
 }
 
-
-
 article {
   display: flex;
   flex-direction: column;
@@ -140,7 +142,6 @@ aside {
 .aside-left > input {
   width: 204px;
   height: 25px;
-
   border: 1px solid black;
   margin-top: 46.10px;
   margin-left: 15.89px;
@@ -148,7 +149,8 @@ aside {
 
 .aside-right {
   margin-left: 10px;
-  margin-top: 47.10px; }
+  margin-top: 47.10px;
+}
 
 /*사이드바 안의 tag들 스타일링*/
 .tag-container {
@@ -157,7 +159,6 @@ aside {
   border: 1px solid black;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
   background-color: #fff;
-
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 5px;
@@ -173,7 +174,8 @@ aside {
   .tag-container .tag-item {
     display: flex;
     flex-direction: row;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+  }
     .tag-container .tag-item .tag-item-title {
       font-size: 9px;
       font-weight: 300;
@@ -193,7 +195,8 @@ aside {
       line-height: 2;
       width: 130px; }
     .tag-container .tag-item .tag-item-select input {
-      display: inline-block; }
+      display: inline-block;
+    }
 
 /* List 정보 글자수 제한을 둬야겠습니다. 레이아웃 고정되게 */
 /*list 2분할(좌,우)*/
@@ -206,13 +209,15 @@ aside {
   margin: 15px; }
   .list-container input {
     float: right;
-    margin: 10px; }
+    margin: 10px;
+   }
 
 /*list-left 세로 4분할*/
 .list-leftitem {
   display: flex;
   flex-direction: column;
-  width: 430.61px; }
+  width: 430.61px;
+ }
 
 /*list font&stylying*/
 .list1 p {
@@ -221,14 +226,16 @@ aside {
   font-family: "Noto Sans KR", sans-serif;
   letter-spacing: 3.0;
   line-height: 2.2;
-  display: inline; }
+  display: inline;
+ }
 
 .list2 p {
   font-size: 13px;
   font-weight: bold;
   font-family: "Noto Sans KR", sans-serif;
   line-height: 1.9;
-  display: inline; }
+  display: inline;
+}
 
 .list3 p {
   font-size: 9px;
@@ -236,7 +243,8 @@ aside {
   font-family: "Noto Sans KR", sans-serif;
   letter-spacing: null;
   line-height: 1.5;
-  display: inline; }
+  display: inline;
+ }
 
 .list4 p {
   font-size: 10px;
@@ -245,12 +253,14 @@ aside {
   letter-spacing: 3.0;
   line-height: 15px;
   text-align: center;
-  display: inline; }
+  display: inline;
+ }
 
 .list1, .list2, .list3, .list4 {
   border-bottom: 1px solid #444;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+ }
 
 /*list3(description) 글자수 제한(3줄, '...'표시)*/
 .list3 {
@@ -261,10 +271,12 @@ aside {
   word-wrap: break-word;
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical; }
+  -webkit-box-orient: vertical;
+}
 
 .list4 {
-  border-bottom: none; }
+  border-bottom: none;
+}
 
 .list-rightitem {
   width: 88.86px;
@@ -272,15 +284,18 @@ aside {
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  border-left: 1px solid #444; }
+  border-left: 1px solid #444;
+}
 
 #date {
   padding-right: 20px;
-  border-right: 1px solid #444; }
+  border-right: 1px solid #444;
+}
 
 /* 여기 좀 수정 */
 .list1 p, .list2 p, .list3, .list4 {
   padding-top: 2px;
   padding-bottom: 4px;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+}
