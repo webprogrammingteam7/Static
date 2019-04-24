@@ -9,6 +9,8 @@
   font-family: "gill-sans-mt-ultra-bold";
   src: url("gill-sans-mt-ultra-bold.ttf") format("truetype"); }
 
+/* 사파리에서 레이아웃이 깨집니다. 이 문제는 일단 발표 후 해결해야겠습니다. */
+
 /*body 기본 폰트 정의 및 CSS 초기화*/
 html, body, .container{
   width: 1024px;
@@ -165,7 +167,6 @@ h1 {
 
 .today_event {
   display: flex;
-
   flex-basis: 1;
   overflow: hidden;
   width: 100%;
@@ -324,6 +325,7 @@ aside {
     .tag-container .tag-item .tag-item-select input {
       display: inline-block; }
 
+/* List 글자수 제한을 둬야겠습니다. 레이아웃 고정되게*/
 /*list 2분할(좌,우)*/
 .list-container {
   display: flex;
@@ -406,6 +408,7 @@ aside {
   padding-right: 20px;
   border-right: 1px solid #444; }
 
+  /* 여기 조금 수정*/
 .list1 p, .list2 p, .list3, .list4 {
   padding-top: 2px;
   padding-bottom: 4px;

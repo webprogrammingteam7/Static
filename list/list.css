@@ -195,6 +195,7 @@ aside {
     .tag-container .tag-item .tag-item-select input {
       display: inline-block; }
 
+/* List 정보 글자수 제한을 둬야겠습니다. 레이아웃 고정되게 */
 /*list 2분할(좌,우)*/
 .list-container {
   display: flex;
@@ -277,6 +278,7 @@ aside {
   padding-right: 20px;
   border-right: 1px solid #444; }
 
+/* 여기 좀 수정 */
 .list1 p, .list2 p, .list3, .list4 {
   padding-top: 2px;
   padding-bottom: 4px;

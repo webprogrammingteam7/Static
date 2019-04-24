@@ -1,247 +1,244 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./card.css">
-    <script>
-        // JS goes here
-    </script>
-    <title>SNUPLAN</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./card.css">
+  <title>SNUPLAN</title>
 </head>
 <body>
-    <!-- header에는 로고와 index가 들어갑니다 -->
-<div class="container">
-<header>
-    <nav>
-        <a class="logo" href="../main_making/main.html">snuplan</a>
+  <!-- header에는 로고와 index가 들어갑니다 -->
+  <div class="container">
+    <header>
+      <nav>
+        <a class="logo" href="../main/main.html">snuplan</a>
         <div></div>
         <ul>
           <li><a href="#about">about</a></li>
           <li><a href="#login">login</a></li>
           <li><a href="#my page">my page</a></li>
         </ul>
-    </nav>
-</header>
-<!-- section에는 본문과 좌측 검색창이 들어갑니다. -->
-<section>
-    <div class="contents">
+      </nav>
+    </header>
+    <!-- section에는 본문과 좌측 검색창이 들어갑니다. -->
+    <section>
+      <div class="contents">
 
         <article>
-                <!-- 'list<->card'toggle Switch 입니다. javascript를 활용해 추후에 구현예정.-->
-                <span><a href="../list/list.html"><input type="button" value="list" onclick="" class="toggle_view"></a></span>
-                <!-- list를 보여주는 곳입니다. -->
-                <div class="card_row" style="margin-top:0">
-                    <div class="card_container">
-                        <div class="card_poster"><img = src ="../img.jpg"></img></div>
-                        <div><h2>교황과 아라비아</h2></div>
-                        <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                        <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                    </div>
-                    <div class="card_container">
-                            <div class="card_poster"><img = src ="../img1.jpg"></img></div>
-                            <div><h2>Troy</h2></div>
-                            <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                            <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                    </div>
-                    <div class="card_container">
-                            <div class="card_poster"><img = src ="../img2.jpg"></img></div>
-                            <div><h2>화요 음악회</h2></div>
-                            <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                            <div class="card_tag"><p>공연/전시</p><p></p><p>학내기관</p></div>
-                    </div>
-                    <div class="card_container">
-                            <div class="card_poster"><img = src ="../img3.jpg"></img></div>
-                            <div><h2>2019 SNU 사회공헌 Fair</h2></div>
-                            <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                            <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                    </div>
-                </div>
-                <div class="card_row">
-                        <div class="card_container">
-                            <div class="card_poster"><img = src ="../img7.jpg"></img></div>
-                            <div><h2>장애의 정체성 정치가 던지는</h2></div>
-                            <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                            <div class="card_tag"><p>tag1</p><p>tag2</p><p>tag3</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img4.jpg"></img></div>
-                                <div><h2>맥스웰 도깨비는 정보 엔트로피</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img5.jpg"></img></div>
-                                <div><h2>극한직업 : 정치인편</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img6.jpg"></img></div>
-                                <div><h2>100세 시대, 건강한 잇몸관리</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                </div>
-                <div class="card_row">
-                        <div class="card_container">
-                            <div class="card_poster"><img = src ="../img7.jpg"></img></div>
-                            <div><h2>장애의 정체성 정치가 던지는</h2></div>
-                            <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                            <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img.jpg"></img></div>
-                                <div><h2>교황과 아라비아</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img1.jpg"></img></div>
-                                <div><h2>TROY</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img2.jpg"></img></div>
-                                <div><h2>화요 음악회</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                </div>
-                <div class="card_row">
-                        <div class="card_container">
-                            <div class="card_poster"><img = src ="../img3.jpg"></img></div>
-                            <div><h2>2019 SNU 사회공헌 Fair</h2></div>
-                            <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                            <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img4.jpg"></img></div>
-                                <div><h2>맥스웰 도깨비는 정보 엔트로피</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img5.jpg"></img></div>
-                                <div><h2>극한직업 : 정치인편</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img6.jpg"></img></div>
-                                <div><h2>100세 시대, 건강한 잇몸관리</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                </div>
-                <div class="card_row">
-                        <div class="card_container">
-                            <div class="card_poster"><img = src ="../img7.jpg"></img></div>
-                            <div><h2>장애의 정체성 정치가 던지는</h2></div>
-                            <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                            <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img.jpg"></img></div>
-                                <div><h2>교황과 아라비아</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img1.jpg"></img></div>
-                                <div><h2>TROY</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img2.jpg"></img></div>
-                                <div><h2>화요 음악회</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                </div>
-                <div class="card_row">
-                        <div class="card_container">
-                            <div class="card_poster"><img = src ="../img3.jpg"></img></div>
-                            <div><h2>2019 SNU 사회공헌 Fair</h2></div>
-                            <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                            <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img4.jpg"></img></div>
-                                <div><h2>맥스웰 도깨비는 정보 엔트로피</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img5.jpg"></img></div>
-                                <div><h2>극한직업 : 정치인편</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                        <div class="card_container">
-                                <div class="card_poster"><img = src ="../img6.jpg"></img></div>
-                                <div><h2>100세 시대, 건강한 잇몸관리</h2></div>
-                                <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
-                                <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
-                        </div>
-                </div>
-        </article>
-    </div>
-    <aside>
-        <div class="aside-left">
-            <input type="text" name="search" placeholder = "검색" id="">
-            <div class="tag-container">
-                <div class="tag-item">
-                    <div class="tag-item-title">
-                        성격
-                    </div>
-                    <div class="tag-item-select">
-                        <input type="checkbox" name="chk_info" value="전공/취업 설명회">전공/취업 설명회<br>
-                        <input type="checkbox" name="chk_info" value="세미나/강연/특강">세미나/강연/특강<br>
-                        <input type="checkbox" name="chk_info" value="공연/전시">공연/전시<br>
-                        <input type="checkbox" name="chk_info" value="이벤트">이벤트<br>
-                    </div>
-                </div>
-                <div class="tag-item">
-                    <div class="tag-item-title">
-                        주제
-                    </div>
-                    <div class="tag-item-select">
-                        <input type="checkbox" name="chk_info" value="봉사">봉사<br>
-                        <input type="checkbox" name="chk_info" value="어학">어학<br>
-                        <input type="checkbox" name="chk_info" value="여행">여행<br>
-                        <input type="checkbox" name="chk_info" value="창업">창업<br>
-                        <input type="checkbox" name="chk_info" value="건강/보건">건강/보건<br>
-                        <input type="checkbox" name="chk_info" value="문화/예술">문화/예술<br>
-                        <input type="checkbox" name="chk_info" value="스포츠/레저">스포츠/레저<br>
-                        <input type="checkbox" name="chk_info" value="경제/금융">경제/금융<br>
-                        <input type="checkbox" name="chk_info" value="경영/컨설팅">경영/컨설팅<br>
-                        <input type="checkbox" name="chk_info" value="정치/사회">정치/사회<br>
-                        <input type="checkbox" name="chk_info" value="IT/기술">IT/기술<br>
-                    </div>
-                </div>
-                <div class="tag-item">
-                    <div class="tag-item-title">
-                        주최기관
-                    </div>
-                    <div class="tag-item-select">
-                        <input type="checkbox" name="chk_info" value="학내기관">학내기관<br>
-                        <input type="checkbox" name="chk_info" value="대외기관">대외기관<br>
-                        <input type="checkbox" name="chk_info" value="학생자치">학생자치<br>
-                    </div>
-                </div>
+          <!-- 'list<->card'toggle Switch 입니다. javascript를 활용해 추후에 구현예정.-->
+          <span><a href="../list/list.html"><input type="button" value="list" onclick="" class="toggle_view"></a></span>
+          <!-- list를 보여주는 곳입니다. -->
+          <div class="card_row" style="margin-top:0">
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img.jpg"></img></div>
+              <div><h2>교황과 아라비아</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
             </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img1.jpg"></img></div>
+              <div><h2>Troy</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img2.jpg"></img></div>
+              <div><h2>화요 음악회</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>공연/전시</p><p></p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img3.jpg"></img></div>
+              <div><h2>2019 SNU 사회공헌 Fair</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+          </div>
+          <div class="card_row">
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img7.jpg"></img></div>
+              <div><h2>장애의 정체성 정치가 던지는</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>tag1</p><p>tag2</p><p>tag3</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img4.jpg"></img></div>
+              <div><h2>맥스웰 도깨비는 정보 엔트로피</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img5.jpg"></img></div>
+              <div><h2>극한직업 : 정치인편</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img6.jpg"></img></div>
+              <div><h2>100세 시대, 건강한 잇몸관리</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+          </div>
+          <div class="card_row">
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img7.jpg"></img></div>
+              <div><h2>장애의 정체성 정치가 던지는</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img.jpg"></img></div>
+              <div><h2>교황과 아라비아</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img1.jpg"></img></div>
+              <div><h2>TROY</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img2.jpg"></img></div>
+              <div><h2>화요 음악회</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+          </div>
+          <div class="card_row">
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img3.jpg"></img></div>
+              <div><h2>2019 SNU 사회공헌 Fair</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img4.jpg"></img></div>
+              <div><h2>맥스웰 도깨비는 정보 엔트로피</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img5.jpg"></img></div>
+              <div><h2>극한직업 : 정치인편</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img6.jpg"></img></div>
+              <div><h2>100세 시대, 건강한 잇몸관리</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+          </div>
+          <div class="card_row">
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img7.jpg"></img></div>
+              <div><h2>장애의 정체성 정치가 던지는</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img.jpg"></img></div>
+              <div><h2>교황과 아라비아</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img1.jpg"></img></div>
+              <div><h2>TROY</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img2.jpg"></img></div>
+              <div><h2>화요 음악회</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+          </div>
+          <div class="card_row">
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img3.jpg"></img></div>
+              <div><h2>2019 SNU 사회공헌 Fair</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img4.jpg"></img></div>
+              <div><h2>맥스웰 도깨비는 정보 엔트로피</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img5.jpg"></img></div>
+              <div><h2>극한직업 : 정치인편</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+            <div class="card_container">
+              <div class="card_poster"><img = src ="../img6.jpg"></img></div>
+              <div><h2>100세 시대, 건강한 잇몸관리</h2></div>
+              <div class="card_date"><p>4월 24일 10:00</p><p>서울대학교 63동 502호</p></div>
+              <div class="card_tag"><p>세미나</p><p>정치/사회</p><p>학내기관</p></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <aside>
+        <div class="aside-left">
+          <input type="text" name="search" placeholder = "검색" id="">
+          <div class="tag-container">
+            <div class="tag-item">
+              <div class="tag-item-title">
+                성격
+              </div>
+              <div class="tag-item-select">
+                <input type="checkbox" name="chk_info" value="전공/취업 설명회">전공/취업 설명회<br>
+                <input type="checkbox" name="chk_info" value="세미나/강연/특강">세미나/강연/특강<br>
+                <input type="checkbox" name="chk_info" value="공연/전시">공연/전시<br>
+                <input type="checkbox" name="chk_info" value="이벤트">이벤트<br>
+              </div>
+            </div>
+            <div class="tag-item">
+              <div class="tag-item-title">
+                주제
+              </div>
+              <div class="tag-item-select">
+                <input type="checkbox" name="chk_info" value="봉사">봉사<br>
+                <input type="checkbox" name="chk_info" value="어학">어학<br>
+                <input type="checkbox" name="chk_info" value="여행">여행<br>
+                <input type="checkbox" name="chk_info" value="창업">창업<br>
+                <input type="checkbox" name="chk_info" value="건강/보건">건강/보건<br>
+                <input type="checkbox" name="chk_info" value="문화/예술">문화/예술<br>
+                <input type="checkbox" name="chk_info" value="스포츠/레저">스포츠/레저<br>
+                <input type="checkbox" name="chk_info" value="경제/금융">경제/금융<br>
+                <input type="checkbox" name="chk_info" value="경영/컨설팅">경영/컨설팅<br>
+                <input type="checkbox" name="chk_info" value="정치/사회">정치/사회<br>
+                <input type="checkbox" name="chk_info" value="IT/기술">IT/기술<br>
+              </div>
+            </div>
+            <div class="tag-item">
+              <div class="tag-item-title">
+                주최기관
+              </div>
+              <div class="tag-item-select">
+                <input type="checkbox" name="chk_info" value="학내기관">학내기관<br>
+                <input type="checkbox" name="chk_info" value="대외기관">대외기관<br>
+                <input type="checkbox" name="chk_info" value="학생자치">학생자치<br>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="aside-right">
-            <input type="button" value="+">
+          <input type="button" value="+">
         </div>
-    </aside>
-</section>
-<footer>
-        Copyright 2019. 웹프로그래밍개론-7조. all rights reserved.
-</footer>
-</div>
+      </aside>
+    </section>
+    <footer>
+      Copyright 2019. 웹프로그래밍개론-7조. all rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
